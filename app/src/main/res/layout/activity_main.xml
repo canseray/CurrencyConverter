@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/usdText"
+        android:layout_width="237dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="USD:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tryText" />
+
+    <TextView
+        android:id="@+id/tryText"
+        android:layout_width="237dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="TL:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadText" />
+
+    <TextView
+        android:id="@+id/cadText"
+        android:layout_width="237dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="CAD:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/euroText" />
+
+    <TextView
+        android:id="@+id/euroText"
+        android:layout_width="237dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="96dp"
+        android:gravity="center"
+        android:text="EURO:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/t"
+        android:layout_width="214dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="getRates"
+        android:text="GET RATES"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usdText" />
+
+</android.support.constraint.ConstraintLayout>
